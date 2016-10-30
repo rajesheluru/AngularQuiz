@@ -1,0 +1,346 @@
+body {
+font-family: 'Josefin Slab', serif;
+    background-color: lightblue;
+}
+
+/*----------------Setting the background image--------------*/
+
+.background-image {
+	background: url("../images/angular.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+	display: block;
+	width: 100%;
+    height: 130%;
+    position: absolute;
+	opacity: 0.9;
+	z-index: -999;
+}
+
+/*--------------Common section----------------*/
+
+.heading-section,
+.intro-section,
+.quiz-section,
+.result-section {
+	margin: 0 auto;
+	text-align: center;
+    }
+
+.intro-section,
+.quiz-section,
+.result-section {
+	width: 32rem;
+	background-image: url("../images/transparent.jpg");
+	border-radius: 0.5rem;
+	padding: 2rem;
+    
+}
+
+/*---------------Heading section---------------*/
+
+.heading-section {
+	width: 100%;
+	height: 16.5rem;
+	padding: 3rem 0;
+}
+
+.heading-section h1 {
+	color: #F5F1DE;
+	font-size: 5rem;
+	font-weight: 900;
+	letter-spacing: 0.25rem;
+}
+
+/*----------------Introduction section-----------------*/
+
+.intro-section h2 {
+	color: #F5F1DE;
+	font-size: 2rem;
+	font-weight: 300;
+	letter-spacing: 0.1rem;
+	padding-bottom: 1rem;
+	line-height: 2.5rem;
+}
+
+.intro-section p {
+	color: #FFD2A6;
+	font-size: 1.25rem;
+	font-weight: 300;
+	letter-spacing: 0.1rem;
+	padding-bottom: 0.75rem;
+	line-height: 1.75rem;
+}
+
+.intro-section #startQuiz {
+	padding: 0.75rem;
+	margin-top: 1rem;
+	font-size: 1.25rem;
+	font-family: 'Josefin Slab', serif;
+	font-weight: 700;
+	letter-spacing: 0.05rem;
+	border: none;
+	border-radius: 0.25rem;
+	color: #7A4715;
+	background-color: #F5F1DE;
+}
+
+.intro-section #startQuiz:focus {
+	outline: none;
+}
+
+.intro-section #startQuiz:hover {
+	background-color: #FFD2A6;
+	cursor: pointer;
+}
+
+/*----------------Quiz section-----------------*/
+
+.quiz-questions h3 {
+	color: #FFD2A6;
+	font-size: 1.25rem;
+	font-weight: 300;
+	letter-spacing: 0.1rem;
+	padding-bottom: 0.75rem;
+}
+
+.quiz-questions h2 {
+	color: #F5F1DE;
+	font-size: 1.45rem;
+	font-weight: 300;
+	letter-spacing: 0.1rem;
+	padding-bottom: 0.5rem;
+	line-height: 2rem;
+}
+
+.quiz-options { 
+	width: 50%;
+	color: #FFD2A6;
+	font-size: 1.25rem;
+	line-height: 2rem;
+	margin: 0 auto;
+	text-align: left;
+}
+
+.quiz-options input {
+	margin-right: 1rem;
+}
+
+.quiz-questions #submit-answer {
+	padding: 0.5rem;
+	margin-top: 0.75rem;
+	font-size: 1.1rem;
+	font-family: 'Josefin Slab', serif;
+	font-weight: 400;
+	letter-spacing: 0.05rem;
+	border: none;
+	border-radius: 0.25rem;
+	color: #7A4715;
+	background-color: #F5F1DE;
+}
+
+.quiz-questions #submit-answer:focus {
+	outline: none;
+}
+
+.quiz-questions #submit-answer:hover {
+	background-color: #FFD2A6;
+	cursor: pointer;
+}
+
+/*----------------Result section-----------------*/
+
+.result-section h2.congrats {
+	color: #FFD2A6;
+	font-size: 2rem;
+	font-weight: 300;
+	letter-spacing: 0.1rem;
+	padding-bottom: 2rem;
+	line-height: 2rem;
+}
+
+.result-section h2#show-score {
+	color: #F5F1DE;
+	font-size: 1.5rem;
+	font-weight: 300;
+	letter-spacing: 0.1rem;
+	padding-bottom: 0.5rem;
+	line-height: 2rem;
+}
+
+.result-section #startQuiz {
+	padding: 0.75rem;
+	margin-top: 1rem;
+	font-size: 1rem;
+	font-family: 'Josefin Slab', serif;
+	font-weight: 700;
+	letter-spacing: 0.05rem;
+	border: none;
+	border-radius: 0.25rem;
+	color: #7A4715;
+	background-color: #F5F1DE;
+}
+
+.result-section #startQuiz:focus {
+	outline: none;
+}
+
+.result-section #startQuiz:hover {
+	background-color: #FFD2A6;
+	cursor: pointer;
+}
+
+
+/*----------------Responsive design-----------------*/
+
+@media only screen and (max-width: 1024px) {
+
+}
+
+@media only screen and (max-width: 768px) {
+	.heading-section h1 {
+		font-size: 4.5rem;
+	}
+
+	.intro-section,
+	.quiz-section,
+	.result-section {
+		width: 80%;
+	}
+
+	.intro-section h2 {
+		font-size: 1.75rem;
+	}
+
+	.intro-section p {
+		font-size: 1.2rem;
+		letter-spacing: 0.07rem;
+	}
+
+	.intro-section #startQuiz {
+		padding: 0.65rem;
+		font-size: 1.2rem;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.heading-section h1 {
+		font-size: 3.75rem;
+		line-height: 4.75rem;
+		letter-spacing: 0.1rem;
+	}
+
+	.intro-section,
+	.quiz-section,
+	.result-section {
+		width: 80%;
+	}
+
+	.intro-section h2 {
+		font-size: 1.5rem;
+	}
+
+	.intro-section p {
+		font-size: 1.1rem;
+		letter-spacing: 0.05rem;
+	}
+
+	.intro-section #startQuiz {
+		padding: 0.55rem;
+		font-size: 1.1rem;
+	}
+
+	.quiz-questions h2 {
+		font-size: 1.25rem;
+		letter-spacing: 0.07rem;
+		line-height: 1.75rem;
+	}
+
+	.quiz-options { 
+		width: 76%;
+	}
+
+	.quiz-questions #submit-answer {
+		padding: 0.5rem;
+		font-size: 1rem;
+		font-weight: 600;
+	}
+
+	.result-section h2.congrats {
+		font-size: 1.5rem;
+	}
+
+	.result-section h2#show-score {
+		font-size: 1.3rem;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	.heading-section h1 {
+		font-size: 3.1rem;
+		line-height: 3.75rem;
+	}
+
+	.intro-section,
+	.quiz-section,
+	.result-section {
+		width: 75%;
+	}
+
+	.intro-section h2 {
+		font-size: 1.4rem;
+		line-height: 2rem;
+		letter-spacing: 0.05rem;
+	}
+
+	.intro-section p {
+		font-size: 1.07rem;
+	}
+
+	.intro-section #startQuiz {
+		padding: 0.4rem;
+		font-size: 1rem;
+	}
+
+	.quiz-options { 
+		width: 100%;
+		font-size: 1.1rem;
+		line-height: 1.75rem;
+	}
+
+	.quiz-options input {
+		margin-right: 0.6rem;
+	}
+
+	.quiz-questions #submit-answer {
+		padding: 0.35rem;
+	}
+
+	.result-section h2.congrats {
+		font-size: 1.35rem;
+	}
+
+	.result-section h2#show-score {
+		font-size: 1.3rem;
+		letter-spacing: 0.01rem;
+		padding-bottom: 1.5rem;
+		line-height: 1.5rem;
+	}
+
+	.result-section #startQuiz {
+		padding: 0.4rem;
+		font-size: 1rem;
+		letter-spacing: 0.02rem;
+	}
+}
+
+
+
+
+
+
+
+
+
+
